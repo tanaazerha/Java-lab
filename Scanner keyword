@@ -1,0 +1,62 @@
+package Com.Sample;
+
+import java.util.Scanner;
+
+public class BestFriend {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);//creation of object of existing class scanner
+		BestFriend bd=new BestFriend();
+		//best friend name
+		System.out.println("enter your best friend name");
+		String name=sc.nextLine();
+		
+		System.out.println("enter your best friend age(int)");
+		int age=sc.nextInt();
+		System.out.println("enter your best friend weight(double)");
+		double weight=sc.nextDouble();
+		System.out.println("enter your best friend height(float)");
+		float height=sc.nextFloat();
+		System.out.println("Is your best friend tall than you");
+		boolean isTall=sc.nextBoolean();
+		System.out.println("enter your best friend fav food:");
+		String favFood=sc.next();
+		
+		System.out.println("Say About your best friend in one line");
+		String bestLine=sc.nextLine();
+		sc.nextLine();
+		System.out.println("****** ABOUT MY BEST FRIEND******");
+		System.out.println("y best friend is"+name);
+		System.out.println("y best friend age"+age);
+		System.out.println("y best friend weight"+weight);
+		System.out.println("y best friend height"+height);
+		System.out.println("y best friend is  tall :"+isTall);
+		System.out.println("y best friend fav food is:"+favFood);
+		System.out.println("eutiful lines about my best friend"+bestLine);
+	
+		sc.close();
+	}
+
+}
+OUTPUT:
+enter your best friend name
+Ashwini
+enter your best friend age(int)
+18
+enter your best friend weight(double)
+40
+enter your best friend height(float)
+154
+Is your best friend tall than you
+true
+enter your best friend fav food:
+pizza
+Say About your best friend in one line
+Be positiveness and kindful
+****** ABOUT MY BEST FRIEND******
+my best friend isTanaaz
+my best friend age18
+my best friend weight40.0
+my best friend height154.0
+my best friend is  tall :true
+my best friend fav food is:pizza
+beutiful lines about my best friend

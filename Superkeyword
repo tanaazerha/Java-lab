@@ -1,0 +1,31 @@
+package Com.Sample;
+class GrandParent{
+	GrandParent() {
+		super();
+		System.out.println("Grand parent class");
+	}
+}
+class Parent extends GrandParent{
+    Parent()
+    {
+    	    super();
+		System.out.println("Parent class");
+	}
+}
+class Child extends Parent{
+	Child() {
+		super();
+		System.out.println("Child class");
+	}
+}
+
+public class Super {
+	public static void main(String[] args ){
+		Child c=new Child();
+	}
+
+}
+OUTPUT:
+Grand parent class
+Parent class
+Child class

@@ -1,0 +1,43 @@
+package Com.Sample;
+
+class RbiBank{
+	public double getRateOfInterset() {
+		return 5.0;
+	}
+}
+class SBI extends RbiBank{
+	@Override
+	public double getRateOfInterset() {
+		return 6.5;
+	}
+}
+class ICICI extends RbiBank{
+	@Override
+	public double getRateOfInterset() {
+		return 7.5;
+	}
+
+	
+}
+
+public class Bank {
+	public static void main(String[] args) {
+		RbiBank rb=new RbiBank();
+		RbiBank rb1=new SBI();//upcasting
+		SBI sb1=new SBI();
+		ICICI ic1=new ICICI();
+		System.out.println("RBI Rate of Interset "+rb.getRateOfInterset());
+		System.out.println("SBI Rate of Interset "+sb1.getRateOfInterset());
+		System.out.println("ICICI Rate of Interset "+ic1.getRateOfInterset());
+		System.out.println("New SBI Rate of Interset "+rb1.getRateOfInterset());
+
+
+
+	}
+
+}
+Output:
+RBI Rate of Interset 5.0
+SBI Rate of Interset 6.5
+ICICI Rate of Interset 7.5
+New SBI Rate of Interset 6.5

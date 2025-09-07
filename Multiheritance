@@ -1,0 +1,31 @@
+package Com.Sample;
+class Flyable{
+	void fly() {
+		System.out.println("Bird is Flying");
+	}
+}
+class Swimmable extends Flyable{
+	void swim() {
+		System.out.println("Bird is Swimming");
+	}
+}
+class Bird extends Swimmable{
+	String name;
+}
+
+public class MultInheritance {
+	public static void main(String[] args) {
+		Flyable f=new Flyable();
+		Swimmable s=new Swimmable();
+		Bird b=new Bird();
+		b.name="Duck";
+		System.out.println("Bird name :"+b.name);
+		s.fly();
+		b.swim();
+	}
+
+}
+OUTPUT:
+Bird name :Duck
+Bird is Flying
+Bird is Swimming

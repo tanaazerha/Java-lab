@@ -1,0 +1,30 @@
+package Com.Sample;
+class Teacher{
+	String name;
+	void data() {
+		System.out.println("Java");
+	}
+}
+class Student extends Teacher{
+	int rollno;
+}
+
+public class SingleInhe {
+	public static void main(String[] args) {
+		Teacher t=new Teacher();
+		Student s=new Student();
+		t.name="Sangeetha";
+		s.name="Tanaaz";
+		s.rollno=123;
+		System.out.println("Teacher Name :"+t.name);
+		System.out.println("Student Name :"+s.name);
+		System.out.println("Student rollno :"+s.rollno);
+		s.data();	
+	}
+
+}
+OUTPUT:
+Teacher Name :Sangeetha
+Student Name :Tanaaz
+Student rollno :123
+Java

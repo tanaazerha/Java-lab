@@ -1,0 +1,22 @@
+package Com.Sample;
+
+public class SpaceTravel {
+	public static void main(String[] args) {
+		double distanceToMoon=384400;//in km
+		float speed=27.5f;//km/sec
+		byte crewMember=3;
+		boolean oxygenAvailable=true;
+		char rocketCode='w';
+		double timeTravel=distanceToMoon/(speed*3600);
+		System.out.println("RocketCode:"+rocketCode);
+		System.out.println("Crew Member"+crewMember);
+		System.out.println("Oxygen available:"+oxygenAvailable);
+		System.out.println("Travel Time"+timeTravel+" hours");
+	}
+
+}
+OUTPUT:
+RocketCode:w
+Crew Member3
+Oxygen available:true
+Travel Time3.882828282828283 hours

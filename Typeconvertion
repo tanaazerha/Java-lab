@@ -1,0 +1,43 @@
+package Com.Sample;
+import java.lang.*;
+import java.util.Scanner;
+
+public class TypeConversion {
+	public static void main(String[] args) {
+		Scanner tcc=new Scanner(System.in);
+		System.out.println("Enter Items Name:");
+		String itemName=tcc.nextLine();
+		System.out.println("Enter quantity:");
+		int qty=tcc.nextInt();
+		System.out.println("enter price of an item:");
+		double price=tcc.nextDouble();
+		
+		System.out.println("Item details:");
+		System.out.println("Item Name:"+itemName);
+		System.out.println("quntity:"+qty);
+		System.out.println("price of an item:"+price);
+	
+		/* implicit type conversion*/
+		double totalAmount=price*qty;
+		System.out.println("Total Amount of Item:"+totalAmount);
+		/** Explicit type casting
+		 happen here
+		 */
+		int finalAmount=(int)totalAmount;
+		System.out.println("After explicit type conversion :"+finalAmount);
+		tcc.close();
+	}
+}
+OUTPUT:
+Enter Items Name:
+chocolate
+Enter quantity:
+10
+enter price of an item:
+20
+Item details:
+Item Name:chocolate
+quntity:10
+price of an item:20.0
+Total Amount of Item:200.0
+After explicit type conversion :200
